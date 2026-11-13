@@ -1,6 +1,13 @@
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
+// IBM Plex comes from npm (@fontsource) so the repo stays free of binary
+// font files and a clone builds the same terminal. Vite bundles the woff2
+// files into dist/assets; the family names match theme.css.
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import "@fontsource/ibm-plex-mono/400.css";
 import "./theme.css";
 import { BlueprintProvider, FocusStyleManager } from "@blueprintjs/core";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

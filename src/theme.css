@@ -1,27 +1,5 @@
-@font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/ui/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/ui/fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/ui/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: "IBM Plex Mono";
-  src: url("/ui/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
+/* IBM Plex Sans/Mono are loaded from @fontsource in main.tsx; the family
+   names below must stay "IBM Plex Sans" / "IBM Plex Mono" to match them. */
 
 :root {
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
