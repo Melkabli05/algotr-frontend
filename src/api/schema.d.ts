@@ -5923,6 +5923,8 @@ export interface components {
              * Format: date-time
              */
             processed: string;
+            /** Uncertainty */
+            uncertainty?: number | null;
         };
         /** SentimentStatus */
         SentimentStatus: {
