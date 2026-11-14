@@ -16,8 +16,9 @@ pnpm check    # lint, formatting and types
 ## How it connects to the backend
 
 This repo ships its own Docker image (`Dockerfile` + `nginx.conf.template`):
-nginx serves the built terminal at `/ui` and proxies `/api` and `/stream`
-to the backend (`API_UPSTREAM`, default `api:8000`). The backend's
+nginx serves the built terminal at `/ui` (`/` redirects there) and proxies
+every other path, and `/stream`, to the backend (`API_UPSTREAM`, default
+`api:8000`). The backend's
 `docker-compose.yml` builds this image straight from this repo and puts
 the terminal on :8080. The API itself serves no web pages.
 

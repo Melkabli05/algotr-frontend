@@ -5,6 +5,10 @@ server {
     listen 80;
     server_name _;
 
+    location = / {
+        return 302 /ui/;
+    }
+
     location = /ui {
         return 301 /ui/;
     }
